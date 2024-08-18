@@ -1,0 +1,142 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fb;
+    color: #2c3e50;
+}
+
+header {
+    background-color: #2ecc71; /* Green */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1c40f; /* Yellow */
+}
+
+#hero {
+    background: linear-gradient(to right, #3498db, #e74c3c); /* Blue to Red Gradient */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#hero h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.hero-btn {
+    background-color: #f39c12; /* Yellow */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #e67e22;
+}
+
+.content-section {
+    padding: 60px 30px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    color: #e74c3c; /* Red */
+    border-bottom: 4px solid #f39c12; /* Yellow */
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.model-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.model-item {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.model-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
