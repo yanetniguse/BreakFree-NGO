@@ -142,6 +142,19 @@ footer a:hover {
     text-decoration: underline;
 }
 
+footer p:last-of-type {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #bdc3c7; /* Light gray for the copyright text */
+}
+
+footer p:nth-last-of-type(2) {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #bdc3c7; /* Light gray for the founder information */
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     header {
@@ -196,3 +209,5 @@ footer a:hover {
         font-size: 1em;
     }
 }
+
+
