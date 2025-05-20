@@ -74,18 +74,31 @@ header {
 }
 
 .hero-btn {
-  background-color: #0066cc;
-  color: white;
+  display: inline-block;
   padding: 12px 24px;
-  border-radius: 8px;
+  margin: 10px 5px 0 0;
+  background-color: #007BFF; /* Primary button: blue */
+  color: white;
   text-decoration: none;
+  border-radius: 6px;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .hero-btn:hover {
-  background-color: #004999;
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
+
+/* Secondary style (e.g., pitch deck) */
+.hero-btn.secondary {
+  background-color: #444; /* Dark grey for contrast */
+}
+
+.hero-btn.secondary:hover {
+  background-color: #222;
+}
+
 
 
 /* Sections */
