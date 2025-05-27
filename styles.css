@@ -208,6 +208,127 @@ h2 {
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
+.impact-section {
+  padding: 2rem 1rem;
+  background: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.impact-columns {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.impact-column {
+  flex: 1 1 45%;
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.impact-column h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: #2980b9;
+}
+
+.project-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.project-list > li {
+  margin-bottom: 1.4rem;
+}
+
+.project-list ul {
+  list-style: none;
+  padding-left: 1.2rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-list ul li::before {
+  content: "•";
+  color: #2980b9;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.video-container iframe {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.testimonial {
+  margin-top: 2rem;
+  font-style: italic;
+  background-color: #eaf2f8;
+  padding: 1rem 1.5rem;
+  border-left: 5px solid #2980b9;
+  border-radius: 5px;
+  color: #34495e;
+}
+
+.testimonial footer {
+  text-align: right;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: #2c3e50;
+  font-size: 0.95rem;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .impact-columns {
+    flex-direction: column;
+  }
+
+  .impact-column {
+    flex: 1 1 100%;
+  }
+}
+
+
 /* Footer */
 footer {
   background-color: #111;
