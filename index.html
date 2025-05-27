@@ -21,7 +21,7 @@
         <ul class="nav-links">
           <li><a href="#overview">Overview</a></li>
           <li><a href="#model">Our Model</a></li>
-          <li><a href="#proj" class="menu-btn">AI/ML Projects</a></li>
+          <li><a href="#teams" class="menu-btn">AI/ML Projects</a></li>
           <li><a href="#impact">Impact</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -76,7 +76,8 @@
     </section>
 
 <!-- Your Project Section -->
-<section class="proj" id="proj">
+<!-- Projects Section Start -->
+<section class="teams" id="teams">
   <div class="max-width">
     <h2 class="title">My Projects</h2>
 
@@ -86,46 +87,101 @@
       <button class="custom-next">›</button>
     </div>
 
-    <!-- Carousel Container -->
+    <!-- Carousel -->
     <div class="carousel owl-carousel">
+
+      <!-- NourishKidsAgri -->
+      <div class="card">
+        <div class="box">
+          <img src="https://i.pinimg.com/474x/8a/70/70/8a7070e4b9123501786324adcc0e6184.jpg" alt="NourishKidsAgri" class="project-img">
+          <a href="https://nourishkidsagri.streamlit.app/" target="_blank" class="btn">Live Demo</a>
+          <div class="text">NourishKidsAgri</div>
+          <p>AI-powered Agricultural Assistant that helps farmers with crop selection, irrigation advice, and chatbot support.</p>
+          <p>Tech: Python, Streamlit, ML, OpenWeather API, Sklearn, NLP.</p>
+          <a href="https://github.com/yanetniguse/agristreamlit" target="_blank" class="btn">GitHub Source</a>
+        </div>
+      </div>
+
+      <!-- LinguaFusion -->
+      <div class="card">
+        <div class="box">
+          <img src="lang.png" alt="LinguaFusion" class="project-img">
+          <a href="https://colab.research.google.com/drive/1iVlxhtUhVCNgru1botaAjpqWTdJ7kvYy?usp=sharing#scrollTo=H4-PMvfLE_0A" target="_blank" class="btn">Visit Model</a>
+          <div class="text">LinguaFusion</div>
+          <p>Language-learning platform with ML translation and AI chatbot. BLEU Score: 38.05.</p>
+          <p>Tech: Python, Flask, Hugging Face, ML, NLP.</p>
+          <a href="https://github.com/yanetniguse/LinguaFusion" target="_blank" class="btn">GitHub</a>
+          <a href="https://lingua-jade.vercel.app/" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Concrete Strength Prediction -->
+      <div class="card">
+        <div class="box">
+          <img src="https://i.pinimg.com/474x/5c/04/a9/5c04a9a5a98af22568bd31b59802b792.jpg" alt="Concrete Strength Prediction" class="project-img">
+          <a href="https://yanetniguse-concrete-strength-app-esbush.streamlit.app/" target="_blank" class="btn">Live Demo</a>
+          <div class="text">Concrete Strength Prediction</div>
+          <p>Predicts concrete strength using Ridge & Lasso Regression. Designed for engineers and builders.</p>
+          <p>Tech: Python, Streamlit, ML.</p>
+          <a href="https://github.com/yanetniguse/concrete_strength" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Smart Meal Planner -->
+      <div class="card">
+        <div class="box">
+          <img src="https://i.pinimg.com/736x/07/f2/f6/07f2f6cad8cf99d0f6b4f8473b8d971f.jpg" alt="Smart Meal Planner" class="project-img">
+          <a href="https://smart-meal-planner-based-on-dietary.onrender.com/" target="_blank" class="btn">Live Demo</a>
+          <div class="text">Smart Meal Planner 🥗</div>
+          <p>Personalized meal planning app based on health and diet preferences.</p>
+          <p>Tech: Python, Flask, HTML, CSS.</p>
+          <a href="https://github.com/yanetniguse/Smart-Meal-Planner-Based-on-Dietary-Preferences-or" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Intelligent Tutoring System -->
+      <div class="card">
+        <div class="box">
+          <img src="https://i.pinimg.com/736x/17/b2/a5/17b2a514e5f3b5960559b64d26b2f2f4.jpg" alt="ITS" class="project-img">
+          <a href="https://itutor.streamlit.app/" target="_blank" class="btn">Live Demo</a>
+          <div class="text">Intelligent Tutoring System</div>
+          <p>Adaptive AI-based learning system with speech-to-text input and real-time feedback.</p>
+          <p>Tech: Python, Streamlit, SQLite, SpeechRecognition.</p>
+          <a href="https://github.com/yanetniguse/Intelligent-Tutoring-System-ITS-" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Cervical Cancer Diagnosis -->
+      <div class="card">
+        <div class="box">
+          <img src="https://i.pinimg.com/474x/1f/1a/0f/1f1a0f2310fca1ba1318ffc56c45983c.jpg" alt="Cervical Cancer Diagnosis" class="project-img">
+          <div class="text">Cervical Cancer Diagnosis</div>
+          <p>Web-based system for early cervical cancer detection using a knowledge-based expert system.</p>
+          <p>Tech: Python, Web Dev, KBS.</p>
+          <a href="https://github.com/yanetniguse/Cervical-Cancer-Diagnosis" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Health Diagnostic KBS -->
+      <div class="card">
+        <div class="box">
+          <img src="https://i.pinimg.com/736x/48/06/a3/4806a35864e26dd44fdfe6be27e4e787.jpg" alt="Health KBS" class="project-img">
+          <div class="text">Health Diagnostic KBS</div>
+          <p>Rule-based expert system for health advice in low-access regions.</p>
+          <p>Tech: Python, Prolog, CLIPS, Tkinter.</p>
+          <a href="https://github.com/yanetniguse/health-kbs" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
 
       <!-- NourishKids -->
       <div class="card">
         <div class="box">
-          <img src="assets/img/nourishkids.png" alt="NourishKids App" class="project-img">
-          <a href="https://nourish-kids.vercel.app" class="btn" target="_blank">Live Demo</a>
+          <img src="https://i.pinimg.com/736x/8b/f1/0f/8bf10fd287bcd27dddc44a73ab5bf501.jpg" alt="NourishKids" class="project-img">
+          <a href="https://breakfree-nourishkids.vercel.app/" target="_blank" class="btn">Visit Site</a>
           <div class="text">NourishKids</div>
-          <p>A chatbot-based web app to fight malnutrition in rural areas. Built using Dialogflow, Firebase, and React.</p>
-        </div>
-      </div>
-
-      <!-- Chatbot-Integrated Website -->
-      <div class="card">
-        <div class="box">
-          <img src="assets/img/chatbot.png" alt="Chatbot Website" class="project-img">
-          <a href="https://nourish-kids.vercel.app" class="btn" target="_blank">Live Demo</a>
-          <div class="text">Chatbot-Integrated Website</div>
-          <p>Helps users access nutrition info through chat interaction. Supports offline use in low-connectivity regions.</p>
-        </div>
-      </div>
-
-      <!-- Empower Tigray -->
-      <div class="card">
-        <div class="box">
-          <img src="assets/img/empower-tigray.png" alt="Empower Tigray" class="project-img">
-          <a href="https://yanetnigusetesfay.blogspot.com/2024/07/empower-disadvantaged-breaking-cycle-of.html" class="btn" target="_blank">Learn More</a>
-          <div class="text">Empower Tigray</div>
-          <p>A social initiative to rehabilitate and train disadvantaged children and women in post-conflict Tigray.</p>
-        </div>
-      </div>
-
-      <!-- Portfolio Website -->
-      <div class="card">
-        <div class="box">
-          <img src="assets/img/portfolio.png" alt="Portfolio Website" class="project-img">
-          <a href="https://yanetnigusetesfay.vercel.app" class="btn" target="_blank">Live Demo</a>
-          <div class="text">Portfolio Website</div>
-          <p>Personal portfolio showcasing my work, achievements, and contact info. Built with HTML, CSS, and JS.</p>
+          <p>Platform focused on reducing malnutrition in children using AI-driven dietary solutions.</p>
+          <p>Tech: AI, ML, Web Dev.</p>
+          <a href="https://yanet-niguse-tesfay.vercel.app/projs-detail.html#nourishkids" target="_blank" class="btn">Detailed Insights</a>
         </div>
       </div>
 
@@ -133,14 +189,12 @@
   </div>
 </section>
 
-<!-- Scripts -->
+<!-- jQuery & Owl Carousel -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
 <script>
   $(document).ready(function(){
     var owl = $(".owl-carousel");
-
     owl.owlCarousel({
       loop: true,
       margin: 10,
@@ -157,7 +211,6 @@
       }
     });
 
-    // Custom Navigation Events
     $(".custom-next").click(function(){
       owl.trigger('next.owl.carousel');
     });
@@ -167,6 +220,7 @@
     });
   });
 </script>
+
     
     
     <section id="impact" class="impact-section">
