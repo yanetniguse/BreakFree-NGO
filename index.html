@@ -82,17 +82,12 @@
     <!-- Story 1: Education -->
     <article class="story" role="listitem" aria-label="Education story">
       <div class="media" tabindex="0" aria-hidden="false">
-        <!-- Replace these URLs with your real images -->
         <img class="layer before" src="https://i.pinimg.com/736x/4c/36/09/4c360998baeb18909e976f8565950ffd.jpg" alt="Before: quiet child" />
         <img class="layer after" src="https://i.pinimg.com/1200x/92/a0/00/92a000b8be261602ae5de266b0366821.jpg" alt="After: child learning with others" />
       </div>
       <div class="caption">
         <strong>Education</strong>
         <p>From curiosity to confidence — reading, learning, growing.</p>
-        <div class="controls">
-          <button class="btn-play">Play</button>
-          <button class="btn-replay">Replay</button>
-        </div>
       </div>
     </article>
 
@@ -105,10 +100,6 @@
       <div class="caption">
         <strong>Skills & Livelihood</strong>
         <p>From survival to income — training that lasts.</p>
-        <div class="controls">
-          <button class="btn-play">Play</button>
-          <button class="btn-replay">Replay</button>
-        </div>
       </div>
     </article>
 
@@ -116,196 +107,36 @@
     <article class="story" role="listitem" aria-label="Community story">
       <div class="media" tabindex="0">
         <img class="layer before" src="https://i.pinimg.com/736x/a2/10/e3/a210e3d9cca646d20361a63e4be03047.jpg" alt="Before: isolated child" />
-        <img class="layer after" src="https://i.pinimg.com/736x/e3/22/e1/e322e13f7af58ba4d268d778ef36c709.jpg" alt="belonging" />
+        <img class="layer after" src="https://i.pinimg.com/736x/e3/22/e1/e322e13f7af58ba4d268d778ef36c709.jpg" alt="After: belonging" />
       </div>
       <div class="caption">
         <strong>Community</strong>
         <p>From isolation to belonging — support networks that sustain.</p>
-        <div class="controls">
-          <button class="btn-play">Play</button>
-          <button class="btn-replay">Replay</button>
-        </div>
       </div>
     </article>
   </div>
 </section>
 
-<style>
-  :root{
-    --max-width:1100px;
-    --accent: #1464a6;
-    --radius:14px;
-  }
-  .breakfree-section{
-    max-width:var(--max-width);
-    margin:2.5rem auto;
-    padding:1rem;
-    font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-    color:#1b1b1b;
-  }
-  .breakfree-section h2{ font-size:1.5rem; margin:0 0 .25rem; }
-  .breakfree-section .lead{ margin:0 0 1rem; color:#444; }
-
-  .stories{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:1rem;
-    align-items:start;
-  }
-
-  .story{
-    background:linear-gradient(180deg, rgba(255,255,255,0.9), #fbfbfb);
-    border-radius:var(--radius);
-    box-shadow:0 6px 18px rgba(0,0,0,0.08);
-    overflow:hidden;
-    display:flex;
-    flex-direction:column;
-  }
-
-  .media{
-    position:relative;
-    padding-top:62.5%; /* 16:10-ish ratio */
-    overflow:hidden;
-    cursor:pointer;
-    outline:none;
-  }
-
-  .media .layer{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-    transition:opacity 700ms ease, transform 900ms cubic-bezier(.2,.9,.3,1);
-    will-change:opacity, transform, clip-path;
-  }
-
-  .layer.before{
-    filter:grayscale(.25) brightness(.95) contrast(.94);
-    transform: scale(1.02);
-  }
-
-  .layer.after{
-    opacity:0;
-    transform: translateY(18px) scale(1.03);
-    /* circle reveal starts small */
-    clip-path:circle(0% at 50% 60%);
-  }
-
-  /* When play class added: reveal 'after' layer with expanding circular mask */
-  .story.play .layer.after{
-    animation: revealAfter 1s forwards ease-out;
-    opacity:1;
-    transform: translateY(0) scale(1);
-  }
-
-  @keyframes revealAfter{
-    0%{
-      opacity:0;
-      clip-path:circle(0% at 50% 60%);
-      transform: translateY(18px) scale(1.03);
-    }
-    60%{
-      clip-path:circle(45% at 50% 55%);
-      opacity:0.85;
-    }
-    100%{
-      clip-path:circle(200% at 50% 50%);
-      opacity:1;
-      transform: translateY(0) scale(1);
-    }
-  }
-
-  .caption{
-    padding:1rem;
-    display:flex;
-    gap:.75rem;
-    flex-direction:column;
-  }
-
-  .caption strong{ font-size:1rem; }
-  .caption p{ margin:0; color:#555; font-size:.95rem; }
-
-  .controls{
-    margin-top:.6rem;
-    display:flex;
-    gap:.5rem;
-  }
-
-  .btn-play, .btn-replay{
-    border:0;
-    background:#fff;
-    padding:.45rem .6rem;
-    border-radius:8px;
-    box-shadow:0 3px 8px rgba(0,0,0,0.06);
-    cursor:pointer;
-    font-size:.9rem;
-  }
-
-  .btn-play:hover,.btn-replay:hover{ transform:translateY(-2px); }
-
-  /* Make keyboard focus visible for accessibility */
-  .media:focus{ box-shadow:0 0 0 4px rgba(20,100,166,0.12); }
-  .btn-play:focus,.btn-replay:focus{ outline:2px solid rgba(20,100,166,0.14); }
-
-  /* Respect reduced motion: disable animations */
-  @media (prefers-reduced-motion: reduce){
-    .layer.after{ transition:none; animation:none; opacity:1; clip-path:none; }
-  }
-
-  /* Small screens spacing */
-  @media (max-width:520px){
-    .breakfree-section{ padding:.6rem; }
-    .caption{ padding:.85rem; }
-  }
-</style>
-
 <script>
   (function(){
-    // Basic animation controller for each story card.
-    // Replace image srcs in the HTML above, or set them dynamically if you prefer.
     const stories = Array.from(document.querySelectorAll('.story'));
 
-    // Play animation for a story (adds class 'play' then removes it after some time so it can replay)
     function play(storyEl){
-      storyEl.classList.remove('play'); // restart if already played
-      // force reflow to allow restart
-      void storyEl.offsetWidth;
+      storyEl.classList.remove('play');
+      void storyEl.offsetWidth; // reset animation
       storyEl.classList.add('play');
-
-      // Remove 'play' class after the animation finishes so user can replay
-      const removeAfter = 1300; // slightly longer than CSS animation
-      setTimeout(()=> storyEl.classList.remove('play'), removeAfter);
+      setTimeout(()=> storyEl.classList.remove('play'), 1400); // clear after animation
     }
 
-    // Wire up buttons and click/keyboard on the media area
-    stories.forEach((s, idx) => {
-      const playBtn = s.querySelector('.btn-play');
-      const replayBtn = s.querySelector('.btn-replay');
-      const media = s.querySelector('.media');
-
-      playBtn && playBtn.addEventListener('click', ()=> play(s));
-      replayBtn && replayBtn.addEventListener('click', ()=> play(s));
-
-      // Clicking the image also plays
-      media && media.addEventListener('click', ()=> play(s));
-      // Pressing Enter/Space when focused plays
-      media && media.addEventListener('keydown', (e)=>{
-        if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); play(s); }
-      });
-
-      // Small UX: autoplay first story shortly after load, stagger others
-      const initialDelay = 500 + (idx * 400);
-      setTimeout(()=> play(s), initialDelay);
-    });
-
-    // Optional: Expose a global helper if you want to trigger all
-    window.BreakFree = {
-      playAll: () => stories.forEach((s, i) => setTimeout(()=> s && s.classList.add('play'), i * 300))
-    };
+    // Auto-cycle through stories
+    let idx = 0;
+    setInterval(()=>{
+      play(stories[idx]);
+      idx = (idx + 1) % stories.length;
+    }, 3000); // every 3 seconds
   })();
 </script>
+
 
     
     <section id="impact" class="impact-section">
@@ -604,6 +435,7 @@
   <script src="scripts.js"></script>
 </body>
 </html>
+
 
 
 
